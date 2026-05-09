@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { Menu, X, Download } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { siteConfig } from "../../config/site";
 
 export function Navbar() {
@@ -81,15 +81,6 @@ export function Navbar() {
             ))}
           </div>
 
-          <motion.a
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            href="/resume.pdf"
-            className="flex items-center gap-2 px-5 py-2.5 bg-white/5 border border-white/10 rounded-xl text-sm font-bold text-white hover:bg-white/10 hover:border-blue-400/50 transition-all active:scale-95"
-          >
-            <Download size={16} />
-            Resume
-          </motion.a>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -120,13 +111,6 @@ export function Navbar() {
                   {link.name}
                 </button>
               ))}
-              <a
-                href="/resume.pdf"
-                className="flex items-center justify-center gap-2 py-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl font-bold text-white active:scale-95 transition-transform"
-              >
-                <Download size={20} />
-                Download Resume
-              </a>
             </div>
           </motion.div>
         )}

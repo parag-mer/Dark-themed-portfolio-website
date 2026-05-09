@@ -9,6 +9,7 @@ export const siteConfig = {
   role: "React Native Developer",
   location: "Jamnagar, Gujarat, India",
   email: "paragmer2001@gmail.com",
+  resume: 'https://drive.google.com/file/d/13qrhHM48wiN9BXmyhCxiUtrlbP3jSHCw/view?usp=sharing',
   about: {
     bio: "Mobile app developer with ~3 years of experience building scalable, high-performance applications using React Native and TypeScript.",
     highlights: [

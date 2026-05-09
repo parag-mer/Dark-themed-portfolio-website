@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { ArrowRight, ChevronDown } from "lucide-react";
+import { ArrowRight, ChevronDown, Download } from "lucide-react";
 import { siteConfig } from "../../config/site";
 
 export function Hero() {
@@ -57,7 +57,7 @@ export function Hero() {
           </motion.div>
 
           <motion.h1
-            className="text-7xl md:text-8xl lg:text-9xl mb-6 font-bold tracking-tight bg-gradient-to-r from-blue-400 via-purple-400 to-blue-400 bg-clip-text text-transparent bg-[length:200%_auto]"
+            className="text-7xl md:text-8xl lg:text-9xl mb-6 pb-4 font-bold tracking-tight bg-gradient-to-r from-blue-400 via-purple-400 to-blue-400 bg-clip-text text-transparent bg-[length:200%_auto]"
             animate={{ backgroundPosition: ["0% center", "200% center"] }}
             transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
           >
@@ -101,6 +101,15 @@ export function Hero() {
             >
               Contact Me
             </button>
+            <a
+              href={siteConfig.resume}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-4 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 transition-all duration-300 backdrop-blur-sm transform hover:-translate-y-1 active:scale-95 flex items-center gap-2"
+            >
+              <Download size={18} />
+              Resume
+            </a>
           </motion.div>
 
           <motion.div
