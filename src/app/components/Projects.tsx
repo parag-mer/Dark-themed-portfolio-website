@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { ExternalLink, Github, Star } from "lucide-react";
+import { ExternalLink, Github, Star, Play } from "lucide-react";
 import { PhoneMockup } from "./PhoneMockup";
 import { siteConfig } from "../../config/site";
 
@@ -108,15 +108,28 @@ export function Projects() {
                     View Case Study
                     <ExternalLink size={18} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                   </a> */}
-                  <a
-                    href={project.links.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-8 py-4 bg-white/5 border border-gray-600 rounded-xl font-bold text-gray-300 hover:bg-white/10 hover:border-gray-400 hover:text-white transition-all duration-300 flex items-center gap-2 group active:scale-95"
-                  >
-                    <Github size={20} />
-                    Source Code
-                  </a>
+                  {project.links.playStore && (
+                    <a
+                      href={project.links.playStore}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl font-bold text-white hover:from-blue-500 hover:to-purple-500 transition-all duration-300 flex items-center gap-2 group shadow-[0_0_20px_rgba(37,99,235,0.2)] hover:shadow-[0_0_30px_rgba(37,99,235,0.4)] active:scale-95"
+                    >
+                      <Play size={20} className="fill-white" />
+                      Play Store
+                    </a>
+                  )}
+                  {project.links.github && (
+                    <a
+                      href={project.links.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-8 py-4 bg-white/5 border border-gray-600 rounded-xl font-bold text-gray-300 hover:bg-white/10 hover:border-gray-400 hover:text-white transition-all duration-300 flex items-center gap-2 group active:scale-95"
+                    >
+                      <Github size={20} />
+                      Source Code
+                    </a>
+                  )}
                 </div>}
               </div>
             </motion.div>

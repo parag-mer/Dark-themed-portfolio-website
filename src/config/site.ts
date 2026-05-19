@@ -43,7 +43,7 @@ export const siteConfig = {
     {
       title: "WallSpace",
       subtitle: "Wallpaper App",
-      status: "🚀 Deployed on Google Play (Closed Testing)",
+      status: "🚀 Available on Google Play",
       description: "High-performance wallpaper app with modern UI and smooth animations",
       features: [
         "Search, categories, favorites",
@@ -56,6 +56,7 @@ export const siteConfig = {
       image: WallspaceImg,
       links: {
         github: "https://github.com/parag-mer/wallspace",
+        playStore: "https://play.google.com/store/apps/details?id=com.parag.wallspace",
       },
     },
     {
